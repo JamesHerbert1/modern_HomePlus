@@ -1,3 +1,7 @@
+body{
+font-family: "Play fair Display";
+}
+
 #jumbo4 {
   background-color: #6666cc;
   color: white;
@@ -537,4 +541,5 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 0;
+    color: white;
   }
