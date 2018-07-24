@@ -393,9 +393,9 @@ img {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
@@ -456,10 +456,23 @@ img {
   margin-top: 0;
 }
 
-#cheaper {
-  background-image: url(../img/cheaper.jpg);
-  background-size: 50%;
+#moneybag {
+  background-color: #008B8B;
+  background-size: 100%;
   background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#clock{
+  background-color: #00458a;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #jumbotronindex11 {
@@ -483,7 +496,6 @@ img {
 #jumbotronindex12 {
   margin-bottom: 0;
 }
-<<<<<<< HEAD
   .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -527,6 +539,7 @@ img {
     background-repeat: no-repeat;
     background-size: 100%;
     height: 150px;
+    color: white;
   }
   #jumbotronindex8 {
     margin-bottom: 0;
@@ -541,7 +554,6 @@ img {
     margin-bottom: 0;
     color: white;
   }
-=======
 
 .dropbtn {
   background-color: #3498DB;
@@ -593,6 +605,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 150px;
+  color: white;
 }
 
 #jumbotronindex8 {
@@ -638,9 +651,6 @@ img {
   padding-top: 0;
   margin-top: 0;
 }
-<<<<<<< HEAD
->>>>>>> f70bf5895983876ce669e319a7c81da88b65c35a
-=======
 
 #jumboportfolio {
   background-color: #6666cc;
@@ -658,4 +668,3 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
->>>>>>> eb5584ecb6fb86a2168638a73f3f4c51442e7fd4
