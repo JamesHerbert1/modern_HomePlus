@@ -354,7 +354,6 @@ img {
 }
 
 /* Slideshow container */
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -415,7 +414,6 @@ img {
 /* The dots/bullets/indicators */
 
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -425,7 +423,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
   background-color: #717171;
 }
 
@@ -433,7 +431,7 @@ img {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
   animation-duration: 5s;
 }
@@ -459,7 +457,7 @@ img {
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
-  .prev, .next, .text {
+  .text {
     font-size: 11px
   }
 }
