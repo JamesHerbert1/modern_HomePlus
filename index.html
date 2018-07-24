@@ -13,25 +13,20 @@
   <link rel="icon" href="img/plus-logo.jpg">
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Pricing</a>
-    <a href="#" class="w3-bar-item w3-button">portfolio</a>
-    <a href="#" class="w3-bar-item w3-button">Output</a>
-    <a href="#" class="w3-bar-item w3-button">Advice Center</a>
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
-  </div>
-  <!-- Page Content -->
-  <div class="w3-teal">
-    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-    <div class="w3-container">
-      <h1>My Page</h1>
-    </div>
-  </div>
+ 
   <div class="jumbotron" id="jumbotronindex1">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Pricing</a>
+      <a href="gallery.html">Portfolio</a>
+      <a href="#">Output</a>
+      <a href="#">Advice Center</a>
+      <a href="about.html">About</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="row">
       <div class="col-md-12">
+         <!-- Sidebar -->
         <img id="logo" src="img/PLUS.jpg" alt="logo">
         <div class="logotitle">
           <h1>HOME PLUS</h1>
@@ -150,7 +145,7 @@
         <p>Architects are amazing - we know, we employ a few - but they can be expensive if contracted independently. If you’re hoping to make simple, clean, value-adding changes to your home, there’s no need to reinvent the wheel. Based on knowledge gathered
           from over 750 successful projects so far, we’ll give you straightforward, simple guidance at every stage of the planning process. We rely on intelligent technology to cut costs, not reduce quality. By streamlining the way we gather knowledge
           about your property, we can create 2D floor plans, 3D renders and elevations as efficiently and accurately as a traditional architect, in half the time and at a fraction of the price.</p>
-        <button type="button" name="button">Chat With Our Team</button>
+        <a href="about.html"><button type="button" name="button">Chat With Our Team</button></a>
       </div>
       <div class="col-md-6">
         <div class="row">
@@ -269,14 +264,14 @@
           </div>
         </div>
       </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>  
     <br>
+
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
 <div class="jumbotron" id="jumbotronindex13">
