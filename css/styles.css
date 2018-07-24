@@ -354,6 +354,7 @@ img {
 }
 
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -414,6 +415,7 @@ img {
 /* The dots/bullets/indicators */
 
 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -423,7 +425,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active {
+.active, .dot:hover {
   background-color: #717171;
 }
 
@@ -457,7 +459,7 @@ img {
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
-  .text {
+  .prev, .next, .text {
     font-size: 11px
   }
 }
