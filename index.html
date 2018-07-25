@@ -10,29 +10,22 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Home Plus</title>
-  <link rel="icon" href="img/plus-logo.jpg">
+  <link rel="icon" href="img/PLUS.jpg">
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Pricing</a>
-    <a href="#" class="w3-bar-item w3-button">portfolio</a>
-    <a href="#" class="w3-bar-item w3-button">Output</a>
-    <a href="#" class="w3-bar-item w3-button">Advice Center</a>
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
-  </div>
-  <!-- Page Content -->
-  <div class="w3-teal">
-    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-    <div class="w3-container">
-      <h1>My Page</h1>
-    </div>
-  </div>
   <div class="jumbotron" id="jumbotronindex1">
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#">Pricing</a>
+     <a href="gallery.html">Portfolio</a>
+     <a href="#">Output</a>
+     <a href="#">Advice Center</a>
+     <a href="about.html">About</a>
+   </div>
+   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="row">
       <div class="col-md-12">
-        <img id="logo" src="img/PLUS.jpg" alt="logo">
+        <img id="logo" src="img/PLUS.jpg" alt="logo" class="center">
         <div class="logotitle">
           <h1>HOME PLUS</h1>
           <p>Affordable solutions for your home</p>
@@ -69,7 +62,7 @@
   </div>
   <div class="jumbotron text-center" id="jumbotronindex5">
     <p>Want to discuss your project with one of our expert advisers?
-      <button class="button btn-warning" id="freecall" type="button" name="button">Book a FREE call</button></p>
+    <a href="booking.html"><button class="button btn-warning" id="freecall" type="button" name="button">Book a FREE call</button></a></p>
   </div>
   <div class="jumbotron text-center" id="jumbotronindex6">
     <h1><strong>Why choose HomePlus?</strong></h1>
@@ -294,7 +287,7 @@
 <div class="jumbotron" id="jumbotronindex14">
   <h1>Frequently Asked Questions</h1>
   <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Why would I use HomePlus?
+    <button onclick="myFunction()" class="dropbtn" id="quest1">Why would I use HomePlus?
 </button>
     <div id="myDropdown" class="dropdown-content">
       <p>1. If you want your home extension or conversion plans drawn up.
