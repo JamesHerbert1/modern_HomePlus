@@ -87,3 +87,12 @@ window.onclick = function(event) {
   // just add a class of "floatLabel to the input field!"
   floatLabel(".floatLabel");
 })(jQuery);
+
+//Map link
+function myMap() {
+var location = {
+  center:new google.maps.latlng(00, 00),
+  zoom: 4,
+};
+var map = new google.maps.Map(document.getElementById("map"), mapProp);
+}

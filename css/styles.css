@@ -2,6 +2,22 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+.try{
+  background-color: blue;
+  border: 10px;
+}
+.booking{
+  color: white;
+}
+.renovation{
+  color: white;
+  font-size: 50px;
+  font-style: oblique;
+}
+#map{
+  height: 500px;
+  width: 20%;
+}
 #jumbo4 {
   background-color: #6666cc;
   color: white;
