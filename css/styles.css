@@ -2,25 +2,50 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.try{
-  background-color: blue;
-  border: 10px;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(../img/home1.png);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
 }
-.booking{
-  color: white;
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+
 }
-.renovation{
-  color: white;
-  font-size: 50px;
-  font-style: oblique;
+
+.sidenav a:hover{
+  color: #f1f1f1;
 }
-#map{
-  height: 500px;
-  width: 20%;
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
 }
 #jumbo4 {
   background-color: #6666cc;
   color: white;
+  margin-bottom: 0px;
 }
 
 #buttonpainting {
@@ -194,7 +219,7 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   float: right;
-  border-radius: : 20px;
+  border-radius: 20px;
 }
 
 #buttonheader1 span {
@@ -409,9 +434,9 @@ img {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
@@ -472,10 +497,23 @@ img {
   margin-top: 0;
 }
 
-#cheaper {
-  background-image: url(../img/cheaper.jpg);
+#moneybag {
+  background-color: #008B8B;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#clock{
+  background-color: #00458a;
   background-size: 50%;
   background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #jumbotronindex11 {
@@ -499,6 +537,7 @@ img {
 #jumbotronindex12 {
   margin-bottom: 0;
 }
+
 
 .dropbtn {
   background-color: #3498DB;
@@ -548,6 +587,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 150px;
+  color: white;
 }
 
 #jumbotronindex8 {
@@ -609,4 +649,106 @@ div.polaroid {
 div.container {
   text-align: center;
   padding: 10px 20px;
+
+}
+#render{
+  background-color: grey;
+  padding : 20px;
+}
+#jumbotronindex7{
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#paintingicon{
+  height: 70px;
+  color: white;
+  background-color: #6666cc;
+}
+#electricicon{
+  height: 150px;
+  color: white;
+  background-color: #6666cc;
+}
+#plumbingicon{
+  height: 170px;
+  color: white;
+  background-color: #6666cc;
+}
+#carpentryicon{
+  height: 150px;
+  color: white;
+  background-color: #6666cc;
+}
+#phoneicon{
+  height: 70px;
+  color: white;
+  background-color: #6666cc;
+}
+#compicon{
+  height: 150px;
+  color: white;
+  background-color: #6666cc;
+}
+#questionicon{
+  height: 170px;
+  color: white;
+  background-color: #6666cc;
+}
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-image: url(../img/home1.png);
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+ text-align:center;
+}
+
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: black;
+ display: block;
+ transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+ color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#jumbomaps{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #a9a9a9;
+  color: black;
+  margin-bottom: 0px;
+}
+#jumbomapsa{
+  background-color:  #b3b3b3;
 }

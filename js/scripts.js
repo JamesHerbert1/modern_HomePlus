@@ -1,10 +1,9 @@
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
+function openNav() {
+   document.getElementById("mySidenav").style.width = "100%";
 }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
 }
 
 // HAPPY CUSTOMERS SCRIPT
@@ -13,11 +12,11 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+ showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+ showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -38,6 +37,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  setTimeout(showSlides,5000);
 }
 
 // DROPDOWN MENU
@@ -45,12 +45,12 @@ function showSlides(n) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+ document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+ if (!event.target.matches('.dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -87,12 +87,3 @@ window.onclick = function(event) {
   // just add a class of "floatLabel to the input field!"
   floatLabel(".floatLabel");
 })(jQuery);
-
-//Map link
-function myMap() {
-var location = {
-  center:new google.maps.latlng(00, 00),
-  zoom: 4,
-};
-var map = new google.maps.Map(document.getElementById("map"), mapProp);
-}
