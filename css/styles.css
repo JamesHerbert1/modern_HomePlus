@@ -809,3 +809,6 @@ div.container {
 #jumbomapsa{
   background-color:  #b3b3b3;
 }
+.text-center a {
+  padding: 0.5rem;
+}
