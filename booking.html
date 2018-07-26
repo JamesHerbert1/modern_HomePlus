@@ -7,9 +7,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Bookings</title>
     <link rel="icon" href="img/PLUS.jpg">
+    <style>
+      #map1 { 
+        height: 450px;
+        width: 100%;
+        padding: 10px;
+      }
+    </style>
 </head>
 <body>
   <div class="jumbotron text-center" id="jumbotronindex1">
@@ -41,9 +52,11 @@
           <li>Plumbing</li>
           <li>Carpentry</li>
         </ul>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7916141618957!2d36.77409885088158!3d-1.299850699047282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a7155c78a09%3A0xc996ddd921db1731!2sWanjohi+Mutonyi+Consult+Ltd!5e0!3m2!1sen!2ske!4v1532465046554" width="200px" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        
+        <br/>
+        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
       </div>
+    </div>
     <div class="col-md-3" class="try">
       <div class="jumbotron" id="jumbomapsa">
         <h3>Mars Mechanical Engineers</h3>
@@ -53,7 +66,9 @@
           <li>Plumbing</li>
           <li>Carpentry</li>
         </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.995526336672!2d36.783502770189216!3d-1.3262797862013884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f111ce2071577%3A0x7b6fcf1561ea3cc1!2sMars+Mechanical+Engineers!5e0!3m2!1sen!2ske!4v1532465149386" width="200px" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+        <br/>
+        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
       </div>
     </div>
     <div class="col-md-3" class="try">
@@ -65,7 +80,9 @@
           <li>Plumbing</li>
           <li>Electricity Repairs</li>
         </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7704668758474!2d36.77739855088161!3d-1.3131696990375301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a8054077b85%3A0xe56b428c811f23db!2sSith+Plumber!5e0!3m2!1sen!2ske!4v1532465771228" width="200px" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <br/>
+        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
       </div>
     </div>
     <div class="col-md-3" class="try">
@@ -77,8 +94,15 @@
           <li>Electricity Repairs</li>
           <li>Carpentry</li>
         </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15955.160542568934!2d36.80434697776834!3d-1.3007863347455424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-1.3130838!2d36.8176907!4m5!1s0x182f10c65816687b%3A0x951575b7f271ae7d!2sResultus+Ltd+Nairobi!3m2!1d-1.2895467!2d36.8069158!5e0!3m2!1sen!2ske!4v1532466169133" width="200px" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+        <br/>
+        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <div id="map1"></div>
     </div>
   </div>
 </div>
@@ -141,5 +165,43 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+<script>
+var ctlRouting;
+var mymap;
+var waypoints;
+mymap = L.map('map1').setView([-1.13,36.68], 8);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mymap);
+  var marker = L.marker([-1.13,36.68]).addTo(mymap).bindPopup('company x').openPopup();
+
+
+  // geolocation
+  mymap.on('locationfound', function(e){
+       alert('location found')
+       L.marker(e.latlng).addTo(mymap);
+   
+        waypoints = [
+          L.latLng(-1.13,36.68),
+          L.latLng(-1.14,36.53),
+        ]
+      ctlRouting = L.Routing.control({waypoints,
+            router: L.Routing.mapbox('pk.eyJ1IjoiZGVyeSIsImEiOiJjaWY5anJyN3YwMDI5dGNseHoyZzM4Z3R4In0.dToOXYIZ30LH_7VtFbKW4A')}).addTo(mymap);
+    
+
+  });
+  mymap.on('locationerror', function(e){
+       alert('please turn on your location!')
+      })
+
+  mymap.locate()
+
+
+</script>
 </body>
 </html>
