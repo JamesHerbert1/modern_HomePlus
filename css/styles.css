@@ -697,3 +697,6 @@ div.container {
 .text-center a {
   padding: 0.5rem;
 }
+.d-block {
+  max-height: 400px;
+}
