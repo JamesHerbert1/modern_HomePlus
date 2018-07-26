@@ -54,7 +54,7 @@
         </ul>
         
         <br/>
-        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
+        <button class="button btn-warning freecall" id="one" type="button" name="button">View Route</button>
       </div>
     </div>
     <div class="col-md-3" class="try">
@@ -68,7 +68,8 @@
         </ul>
     
         <br/>
-        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
+
+        <button class="button btn-warning freecall" id="two" type="button" name="button">View Route</button>
       </div>
     </div>
     <div class="col-md-3" class="try">
@@ -82,7 +83,7 @@
         </ul>
         
         <br/>
-        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
+        <button class="button btn-warning freecall" id="three" type="button" name="button">View Route</button>
       </div>
     </div>
     <div class="col-md-3" class="try">
@@ -96,14 +97,13 @@
         </ul>
       
         <br/>
-        <button class="button btn-warning" id="freecall" type="button" name="button">View Route</button>
+        <button class="button btn-warning freecall" id="four" type="button" name="button">View Route</button>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-        <div id="map1"></div>
-    </div>
+
+        <div class = "maprow" id="map1"></div>
+  
   </div>
 </div>
     <div class="jumbotron" id="jumbo4">
@@ -161,7 +161,7 @@
         </div>
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/scripts.js"></script>
@@ -174,32 +174,73 @@ crossorigin=""></script>
 var ctlRouting;
 var mymap;
 var waypoints;
-mymap = L.map('map1').setView([-1.13,36.68], 8);
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(mymap);
-  var marker = L.marker([-1.13,36.68]).addTo(mymap).bindPopup('company x').openPopup();
+var data;
+$('document').ready(function(){
+  $('.maprow').hide();
 
+      mymap = L.map('map1').setView([-1.13,36.68], 8);
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+        
+    $('.freecall').click(function(){
+      if(ctlRouting){
+        mymap.remove(ctlRouting);
+      }
+      $('.maprow').show();
+      var id = $(this).attr('id')
+      var companies = [
+        {
+          id:'one',
+          name:'Wanjohi Consulting Engineers ',
+          latlng: [-1.29985,36.7762]
+        },
+        {
+          id:'two',
+          name:'Mars Mechanical Engineering',
+          latlng: [-1.3029, 36.8265]
+        },
+        {
+          id:'three',
+          name:'Sith Plumbers',
+          latlng: [-1.3131,36.7774]
+        },
+        {
+          id:'four',
+          name:'Resultus Ltd, Nairobi',
+          latlng: [-1.2895,36.8047]
+        }
+      ]
 
-  // geolocation
-  mymap.on('locationfound', function(e){
-       alert('location found')
-       L.marker(e.latlng).addTo(mymap);
-   
-        waypoints = [
-          L.latLng(-1.13,36.68),
-          L.latLng(-1.14,36.53),
-        ]
-      ctlRouting = L.Routing.control({waypoints,
-            router: L.Routing.mapbox('pk.eyJ1IjoiZGVyeSIsImEiOiJjaWY5anJyN3YwMDI5dGNseHoyZzM4Z3R4In0.dToOXYIZ30LH_7VtFbKW4A')}).addTo(mymap);
+      for(var i=0; i<companies.length; i++){
+        if(companies[i].id === id){
+          data = companies[i]
+        }
+      }
+
+      console.log(data)
+      
+      var marker = L.marker([-1.13,36.68]).addTo(mymap).bindPopup(data.name).openPopup();
+      mymap.on('locationfound', function(e){
+        L.marker(e.latlng).addTo(mymap);
     
+          waypoints = [
+            L.latLng(-1.13,36.43),
+            L.latLng(-1.14,36.53),
+          ]
+        ctlRouting = L.Routing.control({waypoints,
+              router: L.Routing.mapbox('pk.eyJ1IjoiZGVyeSIsImEiOiJjaWY5anJyN3YwMDI5dGNseHoyZzM4Z3R4In0.dToOXYIZ30LH_7VtFbKW4A')}).addTo(mymap);
+    
+      });
+      mymap.on('locationerror', function(e){
+          alert('please turn on your location!')
+          })
 
+      mymap.locate()
+     
+      
+    })
   });
-  mymap.on('locationerror', function(e){
-       alert('please turn on your location!')
-      })
-
-  mymap.locate()
 
 
 </script>
