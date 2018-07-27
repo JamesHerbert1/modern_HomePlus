@@ -27,7 +27,8 @@ You will need to:
 
 ## Deployment
 
-I have put up a live stream just by the coding section and one can view this project by clicking on that stream
+Link to deployed page _(click here)_<a href=https://JamesHerbert1.github.io/modern_HomePlus/ title="Title">
+PIG DICE</a>
 ## Built With
 
 * HTML
