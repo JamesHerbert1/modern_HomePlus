@@ -1,3 +1,13 @@
+$(document).ready(function(){
+  $("form#servicepro").submit(function(event){
+    event.preventDefault();
+    alert("Your request has been successfully booked.");
+      $("#servicepro")[0].reset();
+
+  });
+});
+
+
 function openNav() {
    document.getElementById("mySidenav").style.width = "100%";
 }
@@ -7,37 +17,9 @@ function closeNav() {
 }
 
 // HAPPY CUSTOMERS SCRIPT
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
- showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
- showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
- var i;
- var slides = document.getElementsByClassName("mySlides");
- var dots = document.getElementsByClassName("dot");
- if (n > slides.length) {
-   slideIndex = 1
- }
- if (n < 1) {
-   slideIndex = slides.length
- }
- for (i = 0; i < slides.length; i++) {
-   slides[i].style.display = "none";
- }
- for (i = 0; i < dots.length; i++) {
-   dots[i].className = dots[i].className.replace(" active", "");
- }
- slides[slideIndex - 1].style.display = "block";
- dots[slideIndex - 1].className += " active";
-}
+$('.carousel').carousel({
+  interval: 2000
+})
 
 // DROPDOWN MENU
 
@@ -86,3 +68,21 @@ window.onclick = function(event) {
   // just add a class of "floatLabel to the input field!"
   floatLabel(".floatLabel");
 })(jQuery);
+
+$(document).ready(function(){
+  $("#subscribe").click(function(event){
+    event.preventDefault();
+    alert("Thankyou for your subscription.");
+      $("#subscribe")[0].reset();
+ 
+  });
+ });
+ 
+ $(document).ready(function(){
+  $("#sub").submit(function(event){
+    event.preventDefault();
+    alert("Thankyou for your subscription.");
+      $("#sub")[0].reset();
+ 
+  });
+});
