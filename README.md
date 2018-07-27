@@ -41,7 +41,7 @@ HomePlus Team Members:
 * Cynthia Muriithi
 * Kamran sumar
 * James Herbert
-* 
+* Ahmed Ibrahim
 
 
 ## License
