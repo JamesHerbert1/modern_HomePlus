@@ -36,7 +36,7 @@ I have put up a live stream just by the coding section and one can view this pro
 
 ## Authors
 
-Game City Team Members:
+HomePlus Team Members:
 * Melisa Malala
 * Cynthia Muriithi
 * Kamran sumar
