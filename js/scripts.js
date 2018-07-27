@@ -1,3 +1,13 @@
+$(document).ready(function(){
+  $("form#servicepro").submit(function(event){
+    event.preventDefault();
+    alert("Your request has been successfully booked.");
+      $("#servicepro")[0].reset();
+
+  });
+});
+
+
 function openNav() {
    document.getElementById("mySidenav").style.width = "100%";
 }

@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link rel="icon" href="img/PLUS.jpg">
   <title>Home Solution Service</title>
+  <link rel="icon" href="img/PLUS2.jpg">
 </head>
 <div class="jumbotron" id="jumbo1">
   <a href="service.html"><img id="logo" src="img/PLUS.jpg" alt="logo"></a>
@@ -44,125 +45,108 @@
 <div class="jumbotron text-center" id="painter">
   <div class="container">
     <div class="jumbotron" id="painterform">
-
-
-      <div class="form-group">
-        <h2 class="heading">BOOK A PLUMBER</h2>
-        <div class="controls">
-          <input type="text" id="name" class="floatLabel" name="name">
-          <label for="name">Name</label>
-        </div>
-        <div class="controls">
-          <input type="text" id="email" class="floatLabel" name="email">
-          <label for="email">Email</label>
-        </div>
-        <div class="controls">
-          <input type="tel" id="phone" class="floatLabel" name="phone">
-          <label for="phone">Phone</label>
-        </div>
-        <div class="grid">
-          <div class="col-2-3">
-            <div class="controls">
-              <input type="text" id="street" class="floatLabel" name="street">
+      <form id="servicepro">
+        <div class="form-group">
+          <h2 class="heading">BOOK A PLUMBER</h2>
+          <div class="row move">
+            <div class="col-md-6">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Name" style="width:60%;" name="name">
+              <label for="email">Email</label>
+              <input type="text" id="email" class="form-control" placeholder="Email" style="width:60%;" name="email">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Phone number" style="width:60%;" name="phone">
               <label for="street">Street</label>
+              <input type="text" id="street" class="form-control" placeholder="Street" style="width:60%;" name="street">
             </div>
-          </div>
-          <div class="col-1-3">
-            <div class="controls">
-              <input type="number" id="street-number" class="floatLabel" name="street-number">
+            <div class="col-md-6">
               <label for="street-number">Number</label>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="col-2-3">
-            <div class="controls">
-              <input type="text" id="city" class="floatLabel" name="city">
+              <input type="number" id="street-number" class="form-control" placeholder="Street-Number" style="width:60%;" name="street-number">
               <label for="city">City</label>
-            </div>
-          </div>
-          <div class="col-1-3">
-            <div class="controls">
-              <input type="text" id="post-code" class="floatLabel" name="post-code">
+              <input type="text" id="city" class="form-control" placeholder="City" style="width:60%;" name="city">
               <label for="post-code">Post Code</label>
+              <input type="text" id="post-code" class="form-control" placeholder="Post code" style="width:60%;" name="post-code">
+              <label for="country">Country</label>
+              <input type="text" id="country" class="form-control" placeholder="Country" style="width:60%;" name="country">
             </div>
           </div>
-        </div>
-        <div class="controls">
-          <input type="text" id="country" class="floatLabel" name="country">
-          <label for="country">Country</label>
-        </div>
-      </div>
-      <!--  Details -->
-      <div class="form-group">
-        <h2 class="heading">Details</h2>
-        <div class="grid">
-          <div class="col-1-4 col-1-4-sm">
-            <div class="controls">
-              <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
-              <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
-            </div>
-          </div>
-          <!-- <div class="col-1-4 col-1-4-sm">
-        <div class="controls">
-          <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
-          <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
-        </div>
-      </div> -->
-        </div>
-        <div class="grid">
-          <div class="col-1-3 col-1-3-sm">
-            <div class="controls">
-              <i class="fa fa-sort"></i>
-              <select class="floatLabel">
-          <option value="blank"></option>
-          <option value="1">1</option>
-          <option value="2" selected>2</option>
-          <option value="3">3</option>
-        </select>
-              <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp; How Many Pipes Would You Like To Be Fixed?</label>
-            </div>
-          </div>
-          <div class="col-1-3 col-1-3-sm">
-            <div class="controls">
-              <i class="fa fa-sort"></i>
-              <select class="floatLabel">
-        <option value="blank"></option>
-        <option value="deluxe" selected>With Bathroom</option>
-        <option value="Zuri-zimmer">Without Bathroom</option>
-      </select>
-              <label for="fruit">Room</label>
-            </div>
-          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <h2 class="heading">Details</h2>
+                <br>
+                <div class="col-1-4 col-1-4-sm">
 
-          <div class="col-1-3 col-1-3-sm">
-            <div class="controls">
-              <i class="fa fa-sort"></i>
-              <select class="floatLabel">
-        <option value="blank"></option>
-        <option value="single-bed">PVC</option>
-        <option value="double-bed" selected>Metal Pipe</option>
-  <option value="single-bed">Stainless Steel</option>
-  <option value="single-bed">Copper</option>
-  <option value="single-bed">Aluminium</option>
-  <option value="single-bed">Rubber</option>
-  <option value="single-bed">Clogs</option>
-  <option value="single-bed">Calcification</option>
-      </select>
-              <label for="fruit">Which Type of Pipe?</label>
+                  <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;Arrive</label>
+                  <input type="date" id="arrive" class="form-control" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+
+                </div>
+                <br>
+                <div class="grid">
+                  <div class="col-1-3 col-1-3-sm">
+                    <div class="controls">
+
+                      <select class="floatLabel">
+
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="More than 3">More than 3</option>
+
+                  </select>
+                      <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp; How Many Pipes Would You Like To Be Fixed?</label>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-1-3 col-1-3-sm">
+                    <div class="controls">
+
+                      <select class="floatLabel">
+
+                  <option value="deluxe" selected>With Bathroom</option>
+                  <option value="Zuri-zimmer">Without Bathroom</option>
+                </select>
+
+                      <label for="fruit">Room</label>
+
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-1-3 col-1-3-sm">
+                    <div class="controls">
+
+                      <select class="floatLabel">
+                        <br>
+                  <option value="blank">Other</option>
+                  <option value="single-bed">PVC</option>
+                  <option value="double-bed" selected>Metal Pipe</option>
+            <option value="single-bed">Stainless Steel</option>
+            <option value="single-bed">Copper</option>
+            <option value="single-bed">Aluminium</option>
+            <option value="single-bed">Rubber</option>
+            <option value="single-bed">Clogs</option>
+            <option value="single-bed">Calcification</option>
+                </select>
+                      <label for="fruit">Which Type of Pipe?</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid">
+                  <p class="info-text">Please describe your plumbing needs e.g. clogged pipe, rusted pipe, noisy pipe, smelly pipe</p>
+                  <br>
+                  <div class="controls">
+                    <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                    <label for="comments">Comments</label>
+                  </div>
+                  <button id="butsubmit"type="submit" value="Submit" class="col-1-4">Submit</button>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="grid">
-          <p class="info-text">Please describe your plumbing needs e.g. clogged pipe, rusted pipe, noisy pipe, smelly pipe</p>
-          <br>
-          <div class="controls">
-            <textarea name="comments" class="floatLabel" id="comments"></textarea>
-            <label for="comments">Comments</label>
-          </div>
-          <button type="submit" value="Submit" class="col-1-4">Submit</button>
-        </div>
-      </div>
+        <!--  Details -->
+
       </form>
     </div>
   </div>
