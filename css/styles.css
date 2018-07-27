@@ -1,11 +1,15 @@
 body {
   font-family: 'Playfair Display';
+  background-image: url(../img/bleck.jpg);
+  background-position: center;
+  background-size: 100%;
 }
 
 #jumbo4 {
   background-color: #6666cc;
+  opacity: 0.9;
   color: white;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 
 #buttonpainting {
@@ -20,6 +24,7 @@ body {
   outline: none;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #cccccc;
@@ -48,6 +53,7 @@ body {
   outline: none;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #cccccc;
@@ -75,6 +81,7 @@ body {
   outline: none;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #cccccc;
@@ -102,6 +109,7 @@ body {
   outline: none;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #cccccc;
@@ -129,6 +137,7 @@ body {
   outline: none;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #cccccc;
@@ -147,29 +156,31 @@ body {
 
 #jumbo2 {
   text-align: center;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   background-color: #6666cc;
-  margin-top: 0;
+  opacity: 0.9;
+  /* margin-top: 0; */
   color: white;
   padding: 5px;
 }
 
 #jumbo3 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   background-color: : #cccccc;
 }
 
 #jumbo1 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   background-image: url(../img/home1.png);
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 #buttonheader1 {
   display: inline-block;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -210,6 +221,7 @@ body {
 #buttonheader2 {
   display: inline-block;
   background-color: #6666cc;
+  opacity: 0.9;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -294,8 +306,8 @@ body {
 #jumbotronindex4 {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
+  /* margin-bottom: 0;
+  margin-top: 0; */
 }
 
 .logotitle {
@@ -379,7 +391,7 @@ img {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  /* margin: 0 2px; */
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -428,8 +440,8 @@ img {
 #bluehome {
   background: url(../img/bluehome.jpeg);
   background-size: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin-top: 0;
+  margin-bottom: 0; */
 }
 
 #platform {
@@ -438,14 +450,15 @@ img {
 
 #jumbotronindex5 {
   background-color: #6666cc;
+  opacity: 0.9;
   margin-top: 0;
   color: white;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 #jumbotronindex7 {
   background-image: url(../img/ex.jpg);
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 #jumbotronindex7a {
@@ -453,8 +466,8 @@ img {
 }
 
 #jumbotronindex6 {
-  margin-bottom: 0;
-  margin-top: 0;
+  /* margin-bottom: 0;
+  margin-top: 0; */
 }
 
 #moneybag {
@@ -489,13 +502,14 @@ img {
 
 #jumbotronindex13 {
   background-color: #6666cc;
-  margin-top: 0;
+  opacity: 0.9;
+  /* margin-top: 0; */
   color: white;
   margin-bottom: 0;
 }
 
 #jumbotronindex12 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
   .dropbtn {
     background-color: #3498DB;
@@ -543,8 +557,8 @@ img {
     color: white;
   }
   #jumbotronindex8 {
-    margin-bottom: 0;
-    margin-bottom: 0;
+    /* margin-bottom: 0;
+    margin-bottom: 0; */
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -601,7 +615,7 @@ img {
 
 #jumbotronindextwo {
   background-image: url(../img/repair1.jpg);
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   padding bottom: 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -610,8 +624,8 @@ img {
 }
 
 #jumbotronindex8 {
-  margin-bottom: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 0;
+  margin-bottom: 0; */
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -620,7 +634,7 @@ img {
   background-image: url(../img/home1.png);
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   color: white;
 }
 
@@ -650,11 +664,12 @@ img {
   margin-bottom: 0;
   opacity: 0.8;
   padding-top: 0;
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 #jumboportfolio {
   background-color: #6666cc;
+  opacity: 0.9;
   color: white;
 }
 
@@ -684,36 +699,43 @@ div.container {
   height: 70px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #electricicon{
   height: 150px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #plumbingicon{
   height: 170px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #carpentryicon{
   height: 150px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #phoneicon{
   height: 70px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #compicon{
   height: 150px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 #questionicon{
   height: 170px;
   color: white;
   background-color: #6666cc;
+  opacity: 0.9;
 }
 .sidenav {
  height: 100%;
@@ -766,7 +788,7 @@ div.container {
   padding-top: 0px;
   background-color: #a9a9a9;
   color: black;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 #jumbomapsa{
   background-color:  #b3b3b3;
