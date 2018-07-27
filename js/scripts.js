@@ -68,3 +68,21 @@ window.onclick = function(event) {
   // just add a class of "floatLabel to the input field!"
   floatLabel(".floatLabel");
 })(jQuery);
+
+$(document).ready(function(){
+  $("#subscribe").click(function(event){
+    event.preventDefault();
+    alert("Thankyou for your subscription.");
+      $("#subscribe")[0].reset();
+ 
+  });
+ });
+ 
+ $(document).ready(function(){
+  $("#sub").submit(function(event){
+    event.preventDefault();
+    alert("Thankyou for your subscription.");
+      $("#sub")[0].reset();
+ 
+  });
+});
