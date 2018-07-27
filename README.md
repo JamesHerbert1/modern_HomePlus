@@ -27,8 +27,7 @@ You will need to:
 
 ## Deployment
 
-Link to deployed page _(click here)_<a href=https://JamesHerbert1.github.io/modern_HomePlus/ title="Title">
-PIG DICE</a>
+Link to deployed page _(click here)_<a href=https://JamesHerbert1.github.io/modern_HomePlus/ title="Title">modern_HomePlus</a>
 ## Built With
 
 * HTML
